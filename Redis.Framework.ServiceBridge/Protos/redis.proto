@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+import "google/protobuf/duration.proto";
+
+option csharp_namespace = "RedisDemo.gRPCService";
+
+package demo.redis;
+
+service RedisDemoService{
+	rpc GetRedisValue(RedisGetRequest) returns (RedisGetResponse);
+	rpc SetRedisValue(RedisSetRequest) returns (RedisSetResponse);
+}
+
+message RedisGetRequest{
+	string key = 1;
+}
+
+message RedisGetResponse{
+	string data = 1;
+}
+
+message RedisSetRequest{
+	string key = 1;
+	string data = 2;
+	google.protobuf.Duration absoluteExpireTime = 3;
+}
+
+message RedisSetResponse{
+	bool successful = 1;
+}
