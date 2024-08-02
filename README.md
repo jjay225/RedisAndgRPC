@@ -1,5 +1,5 @@
 # RedisAndgRPC
-Redis example using a .NET 7 gRPC service as the service to that communicates to the Redis on Docker or Azure with .NET Framework and .NET 7 integrations. If you don't want to be left off the gRPC and Redis train this project will help you. 
+Redis example using a .NET 7 gRPC service as the service that communicates to the Redis on Docker or Azure with .NET Framework and .NET 7 integrations. If you don't want to be left off the gRPC and Redis train this project will help you. 
 
 ## How does it all work?
 
